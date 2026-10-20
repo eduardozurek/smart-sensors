@@ -23,21 +23,23 @@ Este taller se desarrolla en el marco del **14th Ibero-American Congress on Sens
 
 La actividad explora cómo las herramientas de inteligencia artificial están transformando el procesamiento de datos provenientes de sensores, particularmente mediante la extracción de patrones y la generación de información útil para la toma de decisiones.
 
-Como caso de estudio, utilizaremos señales de **acelerómetros y giroscopios** del dataset WISDM para implementar un sistema de reconocimiento de actividades humanas (*Human Activity Recognition — HAR*) mediante técnicas de aprendizaje automático.
+Como caso de estudio, utilizaremos **características previamente extraídas de señales del acelerómetro de un smartphone**, disponibles en los archivos procesados del dataset WISDM (formato ARFF), para desarrollar un sistema de reconocimiento de actividades humanas (*Human Activity Recognition — HAR*) mediante aprendizaje automático supervisado.
+
+Los conceptos de acelerómetros y giroscopios se abordarán en la introducción teórica. El ejercicio práctico se concentrará en el acelerómetro del smartphone.
 
 El taller combinará una demostración guiada por el instructor con un ejercicio práctico colaborativo en grupos de tres participantes.
 
 Cada grupo trabajará con datos de una persona diferente, entrenará su propio clasificador y comparará los resultados obtenidos con los de los demás equipos.
 
-
 ## Objetivos del taller
 
-1. Comprender los fundamentos de los sensores de movimiento.
-2. Explorar y visualizar señales de acelerómetros y giroscopios.
-3. Procesar datos de sensores mediante Python.
-4. Extraer características relevantes de las señales.
-5. Entrenar y evaluar modelos de clasificación de actividades humanas.
-6. Comparar resultados obtenidos con datos de diferentes personas.
+1. Comprender los fundamentos de los sensores de movimiento y su aplicación al reconocimiento de actividades humanas.
+2. Explorar los datos procesados del acelerómetro de un smartphone utilizando Python y Pandas.
+3. Interpretar las características estadísticas y espectrales extraídas de las señales de aceleración.
+4. Identificar las variables predictoras y la variable objetivo de un problema de clasificación multiclase.
+5. Entrenar y evaluar un clasificador Random Forest mediante Accuracy, F1-macro y matriz de confusión.
+6. Comparar los resultados obtenidos con diferentes sujetos y discutir las limitaciones de la evaluación intra-sujeto.
+
 
 ## Agenda
 
@@ -62,8 +64,6 @@ Cada grupo trabajará con datos de una persona diferente, entrenará su propio c
 
 - [Ejemplo guiado por el instructor](notebooks/01_ejemplo_guiado.ipynb)
 - [Trabajo colaborativo](notebooks/02_trabajo_en_grupo.ipynb)
-
-*Los documentos y notebooks se incorporarán progresivamente al repositorio.*
 
 ## Dataset
 
