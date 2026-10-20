@@ -233,29 +233,43 @@ El siguiente ejemplo muestra un **modelo inicial de demostraci처n**. La partici�
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, classification_report
+from sklearn.metrics import (
+    accuracy_score,
+    f1_score,
+    classification_report
+)
 
+# Preparaci처n
+actividades = ["A", "B", "C", "D", "E"]
+df_modelo = df[df["ACTIVITY"].isin(actividades)].copy()
+
+X = df_modelo.drop(columns=["ACTIVITY", "class"])
+y = df_modelo["ACTIVITY"]
+
+# Separaci처n de datos
 X_train, X_test, y_train, y_test = train_test_split(
     X, y,
-    test_size=0.25,
+    test_size=0.20,
     random_state=42,
     stratify=y
 )
 
+# Entrenamiento
 modelo = RandomForestClassifier(
-    n_estimators=200,
+    n_estimators=100,
     random_state=42,
     n_jobs=-1
 )
+
 modelo.fit(X_train, y_train)
 
-pred = modelo.predict(X_test)
+# Evaluaci처n
+y_pred = modelo.predict(X_test)
 
-print("Accuracy:", accuracy_score(y_test, pred))
-print("F1-macro:", f1_score(y_test, pred, average="macro"))
-print(classification_report(y_test, pred, zero_division=0))
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("F1-macro:", f1_score(y_test, y_pred, average="macro"))
+print(classification_report(y_test, y_pred, zero_division=0))
 ```
-
 El ejemplo requiere que cada clase tenga suficientes filas para la partici처n estratificada. Si no se cumple, es necesario revisar la distribuci처n de actividades.
 
 ### Precauci처n sobre la evaluaci처n
