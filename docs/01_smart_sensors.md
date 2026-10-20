@@ -119,9 +119,9 @@ Los sensores utilizados para medir movimientos producen secuencias de valores qu
 
 Una señal digital puede representarse mediante:
 
-\[
+$
 x[n] = x(nT_s)
-\]
+$
 
 Donde:
 
