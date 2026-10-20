@@ -1,7 +1,15 @@
+# Smart Sensors
+
 Este repositorio forma parte del taller Smart Sensors que se desarrollará en el marco del evento IEEE (Universidad del Norte, Barranquilla, Colombia) el 21 de octubre de 2026.
 
 Desarrollado por:
 
-Eduardo Zurek, Ph.D.
+**Eduardo Zurek, Ph.D.**
 Departamento de Ingeniería de Sistemas
 Universidad del Norte
+
+Para el desarrollo de esta actividad usaremos el dataset "WISDM Smartphone and Smartwatch Activity and Biometrics Dataset" disponible online en:
+https://archive.ics.uci.edu/dataset/507/wisdm+smartphone+and+smartwatch+activity+and+biometrics+dataset
+
+
+
