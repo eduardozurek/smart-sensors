@@ -9,8 +9,8 @@
 - **Fecha:** Miércoles 21 de octubre de 2026
 - **Horario:** 11:30 a. m. – 1:00 p. m.
 - **Duración:** 90 minutos
-- **Lugar:** Universidad del Norte, Barranquilla, Colombia
-- **Instructor:** Dr. Eduardo Zurek
+- **Lugar:** laboratorio de Ciencias de la Computación, Piso 6, Bloque K, Universidad del Norte, Barranquilla, Colombia
+- **Instructor:** Eduardo Zurek, Ph.D.
 - **Institución:** Departamento de Ingeniería de Sistemas, Universidad del Norte
 
 [Programa oficial de IBERSENSOR 2026](https://ibersensor2026.org/#programa)
@@ -29,33 +29,6 @@ El taller combinará una demostración guiada por el instructor con un ejercicio
 
 Cada grupo trabajará con datos de una persona diferente, entrenará su propio clasificador y comparará los resultados obtenidos con los de los demás equipos.
 
-
-# Smart Sensors: Human Activity Recognition Using Machine Learning
-
-### 14th Ibero-American Congress on Sensors — IBERSENSOR 2026
-
-**Taller práctico de sensores inteligentes y aprendizaje automático**
-
-**Evento:** [IBERSENSOR 2026](https://ibersensor2026.org/#programa)  
-**Fecha:** 21 de octubre de 2026  
-**Lugar:** Universidad del Norte, Barranquilla, Colombia  
-**Duración:** 90 minutos
-
-**Instructor:** Eduardo Zurek, Ph.D.  
-Departamento de Ingeniería de Sistemas  
-Universidad del Norte
-
----
-
-## Descripción del taller
-
-Este taller se desarrolla en el marco del **14th Ibero-American Congress on Sensors (IBERSENSOR 2026)**, un encuentro científico internacional dedicado al desarrollo, las tecnologías y las aplicaciones de sensores.
-
-Durante el taller, los participantes explorarán el uso de sensores inteligentes (*Smart Sensors*) para el reconocimiento de actividades humanas (*Human Activity Recognition — HAR*) mediante técnicas de aprendizaje automático.
-
-Utilizando datos reales de acelerómetros y giroscopios del dataset WISDM, se desarrollará un ejemplo práctico de análisis de señales, extracción de características y clasificación de actividades físicas.
-
-La metodología combina una demostración guiada con un ejercicio colaborativo en grupos de tres participantes.
 
 ## Objetivos del taller
 
