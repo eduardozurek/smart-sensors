@@ -125,25 +125,25 @@ $$
 
 Donde:
 
-- \(x[n]\): valor de la señal en la muestra \(n\).
-- \(T_s\): período de muestreo.
-- \(n\): índice de la muestra.
+- $x[n]$: valor de la señal en la muestra $n$.
+- $T_s$: período de muestreo.
+- $n$: índice de la muestra.
 
 La frecuencia de muestreo se define como:
 
-\[
+$$
 f_s = \frac{1}{T_s}
-\]
+$$
 
 Por ejemplo, si un sensor registra 20 muestras por segundo:
 
-\[
+$$
 f_s = 20\ \text{Hz}
-\]
+$$
 
-\[
+$$
 T_s = 0.05\ \text{s}
-\]
+$$
 
 Esto significa que, idealmente, se obtiene una medición cada 50 milisegundos.
 
@@ -178,9 +178,9 @@ Un acelerómetro mide aceleración específica sobre uno o varios ejes. En aplic
 
 Un acelerómetro triaxial proporciona:
 
-\[
+$$
 a_x,\quad a_y,\quad a_z
-\]
+$$
 
 Estas mediciones permiten analizar patrones de movimiento.
 
@@ -188,9 +188,9 @@ Estas mediciones permiten analizar patrones de movimiento.
 
 Un giroscopio mide la velocidad angular alrededor de sus ejes:
 
-\[
+$$
 \omega_x,\quad \omega_y,\quad \omega_z
-\]
+$$
 
 Las mediciones del acelerómetro y el giroscopio proporcionan información complementaria sobre el movimiento de un dispositivo.
 
