@@ -25,15 +25,15 @@ En nuestro caso utilizaremos las mediciones de un acelerómetro integrado en un 
 
 El problema puede expresarse como:
 
-\[
+$$
 f(\mathbf{x})=\hat{y}
-\]
+$$
 
 donde:
 
-- \(\mathbf{x}\) representa las características extraídas de una ventana de mediciones.
-- \(f\) es el modelo de clasificación.
-- \(\hat{y}\) es la actividad predicha.
+- $\mathbf{x}$ representa las características extraídas de una ventana de mediciones.
+- $f$ es el modelo de clasificación.
+- $\hat{y}$ es la actividad predicha.
 
 Por ejemplo, a partir de características relacionadas con la aceleración, el modelo podría identificar si una persona está caminando, trotando, sentada o de pie.
 
@@ -79,15 +79,15 @@ El archivo contiene 93 columnas:
 
 La variable objetivo será:
 
-\[
+$$
 y=\text{ACTIVITY}
-\]
+$$
 
 El vector de características será:
 
-\[
+$$
 \mathbf{x}=[x_1,x_2,\ldots,x_{91}]
-\]
+$$
 
 La columna `class` identifica a la persona y **no debe utilizarse como variable predictora**.
 
@@ -295,13 +295,13 @@ En aprendizaje supervisado se acostumbra dividir los ejemplos en dos conjuntos:
 
 Una división frecuente es:
 
-\[
+$$
 80\%\ \text{entrenamiento}
-\]
+$$
 
-\[
+$$
 20\%\ \text{prueba}
-\]
+$$
 
 ### 8.1. Ejemplo con scikit-learn
 
@@ -379,11 +379,11 @@ No es suficiente entrenar un modelo. También debemos determinar qué tan bien c
 
 La exactitud mide la proporción de predicciones correctas:
 
-\[
+$$
 \text{Accuracy}=
 \frac{\text{Número de predicciones correctas}}
 {\text{Número total de predicciones}}
-\]
+$$
 
 En Python:
 
@@ -401,17 +401,17 @@ Una exactitud elevada no garantiza que el clasificador funcione igualmente bien 
 
 Para una clase determinada:
 
-\[
+$$
 \text{Precision}=\frac{TP}{TP+FP}
-\]
+$$
 
 Mide qué proporción de los ejemplos predichos como pertenecientes a esa clase realmente pertenecen a ella.
 
 ### 10.3. Recall
 
-\[
+$$
 \text{Recall}=\frac{TP}{TP+FN}
-\]
+$$
 
 Mide qué proporción de los ejemplos reales de una clase son identificados correctamente.
 
@@ -419,22 +419,22 @@ Mide qué proporción de los ejemplos reales de una clase son identificados corr
 
 El F1-score combina Precision y Recall mediante su media armónica:
 
-\[
+$$
 F_1=
 2\frac{\text{Precision}\cdot\text{Recall}}
 {\text{Precision}+\text{Recall}}
-\]
+$$
 
 ### 10.5. F1-macro
 
 En clasificación multiclase podemos calcular un F1-score para cada actividad y después obtener su promedio:
 
-\[
+$$
 F_{1,\text{macro}}=
 \frac{1}{K}\sum_{k=1}^{K}F_{1,k}
-\]
+$$
 
-donde \(K\) representa el número de actividades.
+donde $K$ representa el número de actividades.
 
 Esta métrica asigna el mismo peso a cada actividad, independientemente de su número de ejemplos.
 
@@ -473,13 +473,13 @@ El *support* corresponde al número de ejemplos reales de cada clase en el conju
 
 La matriz de confusión permite identificar qué actividades clasifica correctamente el modelo y cuáles confunde.
 
-Para un problema con \(K\) actividades, la matriz tiene dimensiones:
+Para un problema con $K$ actividades, la matriz tiene dimensiones:
 
-\[
+$$
 K\times K
-\]
+$$
 
-Cada elemento \(C_{ij}\) indica cuántos ejemplos de la clase real \(i\) fueron clasificados como clase \(j\).
+Cada elemento $C_{ij}$ indica cuántos ejemplos de la clase real $i$ fueron clasificados como clase $j$.
 
 Los valores de la diagonal principal representan predicciones correctas.
 
