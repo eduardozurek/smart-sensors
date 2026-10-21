@@ -11,6 +11,8 @@
 - **Duración:** 90 minutos
 - **Lugar:** laboratorio de Ciencias de la Computación, Piso 6, Bloque K, Universidad del Norte, Barranquilla, Colombia
 - **Instructor:** Eduardo Zurek, Ph.D.
+- **E-mail:** ezurek@uninorte.edu.co
+- **Orcid:** https://orcid.org/0000-0002-9816-6863
 - **Institución:** Departamento de Ingeniería de Sistemas, Universidad del Norte
 
 [Programa oficial de IBERSENSOR 2026](https://ibersensor2026.org/#programa)
